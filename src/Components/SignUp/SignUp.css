@@ -1,0 +1,147 @@
+/* .Signup body {
+  background-color: aqua;
+}
+
+.mainComponent {
+  background: rgb(228, 227, 237);
+  background: radial-gradient(
+    circle,
+    #0f0a9bbd 0%,
+    rgba(11, 29, 161, 0.545) 0%,
+    rgba(22, 3, 167, 0.718) 100%
+  );
+
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 68vh;
+  max-width: 524px;
+  width: 83%;
+  margin: auto;
+  margin-top: auto;
+  margin-top: 50px;
+  border-radius: 25px;
+  padding: 98px;
+}
+
+.container > form {
+  width: 70%;
+  border: 1px solid #dfdfdf;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+}
+pre {
+  width: 70%;
+  color: #fff;
+  font-size: larger;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: baseline;
+}
+
+.ui divider {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: end;
+}
+.text3{
+  font-weight: bolder;
+  list-style: none;
+} */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 8px 0;
+}
+
+
+/* .ShowPasswordButton {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+.SignUpButton {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+
+.ShowPasswordButton:hover {
+  background-color: #45a049;
+ 
+}
+
+.SignUpButton:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+  form {
+      width: 90%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  form {
+      width: 70%;
+  }
+}
+
+@media (min-width: 801px) {
+  form {
+      width: 50%;
+  }
+}
+
+@media (min-width: 601px) {
+  form {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  label,
+  input {
+      width: 100%;
+  }
+
+  label {
+      flex: 0 0 25%;
+  }
+
+  input {
+      flex: 0 0 75%;
+  }
+}
