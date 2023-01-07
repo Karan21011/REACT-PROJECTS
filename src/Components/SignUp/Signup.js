@@ -18,7 +18,7 @@ function SignUp() {
   const handleChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
-
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
     const [errors] = validate(formValues);
@@ -58,16 +58,16 @@ function SignUp() {
 
   return (
     <>
+    <div className='img'>
+            <div className='containerImg'>
+              <img style={{borderRadius:'60%',height:'50%',width:'20%'}} className='profile' src="./profile.png" alt="" />
+            </div>
+          </div>
       <form onSubmit={handleSubmit}>
         <div className='outer'>
           {Object.keys(formErrors).length === 0 && isSubmit ? (
             <div style={{ color: "green" }}>Registered successfully</div>
           ) : null}
-          <div className='img'>
-            <div className='containerImg'>
-              <img style={{borderRadius:'60%',height:'50%',width:'20%'}} className='profile'  alt="" />
-            </div>
-          </div>
 
           <input
             className='user'
@@ -105,6 +105,7 @@ function SignUp() {
        <br />
         <span>Already, have a account ? &nbsp;<Link to='/login'>Login</Link></span> 
       </form>
+
       <ToastContainer />
     </>
   );

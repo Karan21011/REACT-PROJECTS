@@ -101,11 +101,12 @@ input {
 
 .ShowPasswordButton:hover {
   background-color: #45a049;
- 
+  
 }
 
 .SignUpButton:hover {
   background-color: #45a049;
+ 
 }
 
 @media (max-width: 600px) {
@@ -144,4 +145,19 @@ input {
   input {
       flex: 0 0 75%;
   }
+}
+
+.containerImg{
+  width: 30vw;
+  position: relative;
+  left: 47vw;
+  top: 24vh;
+}
+.outer{
+  margin-top: 5vw;
+}
+.profile{
+  border-radius: 60%;
+height: 50%;
+width: 20%;
 }

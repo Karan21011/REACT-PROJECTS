@@ -4,14 +4,17 @@ import { Link } from "react-router-dom";
 function Login() {
   const[name,setName]=useState('')
    const[password,setPassword] = useState('')
+   const[count,setCount]=useState(0);
 
    const handleClick=()=>{
     localStorage.setItem('name',name)
     localStorage.setItem('password',password)
    }
   
+  
   return (
     <>
+
       <section className="loginSection bg-primary">
         <div className="container h-100">
           <div className="row justify-content-center align-item-center h-100">
@@ -30,7 +33,7 @@ function Login() {
                 </form>
                 <div>
                 <button className="btn btn-outline-primary px-4 rounded-pill mt-2 float-end" onClick={handleClick}>Login</button>
-                </div>
+                  </div>
               </div>
             </div>
           </div>

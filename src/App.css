@@ -96,3 +96,20 @@ font-family: Arial, Helvetica, sans-serif;
   left: 30vh;
 
 } */
+.text2{
+  position: absolute;
+  
+  }
+  
+  @media (max-width:600px) {
+      .text2  {
+          
+  
+          position: absolute;
+          top: 500px;
+          left: 10px;
+      }
+  
+  
+  }
+  
