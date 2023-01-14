@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
 import './SignUp.css'
 
@@ -106,7 +104,6 @@ function SignUp() {
         <span>Already, have a account ? &nbsp;<Link to='/login'>Login</Link></span> 
       </form>
 
-      <ToastContainer />
     </>
   );
 }
